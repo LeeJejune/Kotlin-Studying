@@ -18,4 +18,3 @@ fun main() = runBlocking<Unit> {
     delay(3500L) // 3500밀리초(3.5초)간 대기 -> 3500밀리초가 지나면 코루틴 취소
     longJob.cancel() // 코루틴 취소
 }
-fun getElapsedTime(startTime: Long): String = "지난 시간: ${System.currentTimeMillis() - startTime}ms"
